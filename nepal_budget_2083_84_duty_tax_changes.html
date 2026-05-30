@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nepal Budget 2083/84 — Duty, Tax & Policy Changes (Detailed)</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+  :root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #222638;
+    --border: #2e3347;
+    --accent: #f0b429;
+    --accent2: #e85d4a;
+    --accent3: #4ade80;
+    --accent4: #60a5fa;
+    --text: #e8eaf0;
+    --muted: #8890a4;
+    --sidebar: 280px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    min-height: 100vh;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  /* ── SIDEBAR ── */
+  #sidebar {
+    width: var(--sidebar);
+    min-width: var(--sidebar);
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+  }
+
+  .sb-header {
+    padding: 20px 16px 16px;
+    border-bottom: 1px solid var(--border);
+    background: var(--surface2);
+  }
+  .sb-header h2 { font-size: 13px; font-weight: 700; color: var(--accent); letter-spacing: 0.5px; }
+  .sb-header p { font-size: 11px; color: var(--muted); margin-top: 3px; }
+
+  .sb-search { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  .sb-search input {
+    width: 100%; background: var(--bg); border: 1px solid var(--border);
+    border-radius: 4px; padding: 7px 10px; color: var(--text);
+    font-size: 12px; font-family: inherit; outline: none;
+  }
+  .sb-search input:focus { border-color: var(--accent); }
+
+  .sb-section-title {
+    font-size: 9px; text-transform: uppercase; letter-spacing: 2px;
+    color: var(--muted); padding: 12px 16px 4px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  .sb-link {
+    display: flex; align-items: center; gap: 8px;
+    padding: 7px 16px; font-size: 12px; color: #aab0c4;
+    text-decoration: none; border-left: 2px solid transparent;
+    transition: all 0.12s;
+  }
+  .sb-link:hover, .sb-link.active {
+    background: rgba(240,180,41,0.08);
+    border-left-color: var(--accent);
+    color: var(--text);
+  }
+  .sb-link .dot {
+    width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0;
+    background: var(--muted);
+  }
+  .sb-link:hover .dot, .sb-link.active .dot { background: var(--accent); }
+
+  /* ── MAIN ── */
+  #main { flex: 1; padding: 40px 52px 80px; max-width: 1000px; }
+
+  .page-title {
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 24px;
+    margin-bottom: 36px;
+  }
+  .page-title .tag {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; color: var(--accent); letter-spacing: 2px;
+    text-transform: uppercase; margin-bottom: 8px;
+  }
+  .page-title h1 { font-size: 26px; font-weight: 700; line-height: 1.2; }
+  .page-title p { color: var(--muted); margin-top: 8px; font-size: 13px; }
+
+  /* ── SECTION ── */
+  .section { margin-bottom: 52px; scroll-margin-top: 24px; }
+
+  .section-header {
+    display: flex; align-items: baseline; gap: 12px;
+    margin-bottom: 20px; padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-header h2 { font-size: 18px; font-weight: 700; }
+  .section-header .para {
+    font-family: 'IBM Plex Mono', monospace; font-size: 11px;
+    color: var(--muted); background: var(--surface2);
+    padding: 2px 8px; border-radius: 3px;
+  }
+
+  h3 {
+    font-size: 14px; font-weight: 700; color: var(--accent);
+    margin: 24px 0 10px; text-transform: uppercase; letter-spacing: 0.5px;
+  }
+
+  p { margin-bottom: 10px; color: #c8ccd8; }
+
+  /* ── CHANGE TABLE ── */
+  .change-table {
+    width: 100%; border-collapse: collapse; margin: 12px 0 24px;
+    font-size: 13px;
+  }
+  .change-table thead th {
+    background: var(--surface2);
+    padding: 10px 14px; text-align: left;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 11px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 1px;
+    border-bottom: 1px solid var(--border);
+  }
+  .change-table tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+    line-height: 1.6;
+  }
+  .change-table tbody tr:hover td { background: rgba(255,255,255,0.02); }
+
+  .badge {
+    display: inline-block;
+    font-size: 10px; font-weight: 700;
+    font-family: 'IBM Plex Mono', monospace;
+    padding: 2px 7px; border-radius: 3px;
+    text-transform: uppercase; letter-spacing: 0.5px;
+    white-space: nowrap;
+  }
+  .badge-down { background: rgba(74,222,128,0.15); color: var(--accent3); }
+  .badge-up   { background: rgba(232,93,74,0.15);  color: var(--accent2); }
+  .badge-new  { background: rgba(96,165,250,0.15); color: var(--accent4); }
+  .badge-removed { background: rgba(240,180,41,0.15); color: var(--accent); }
+  .badge-changed { background: rgba(200,180,255,0.15); color: #c4b5fd; }
+
+  /* ── HIGHLIGHT ROWS ── */
+  .hl-green td { background: rgba(74,222,128,0.04) !important; }
+  .hl-red   td { background: rgba(232,93,74,0.04)  !important; }
+  .hl-blue  td { background: rgba(96,165,250,0.04)  !important; }
+
+  /* ── DETAIL CARD ── */
+  .detail-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent);
+    border-radius: 4px;
+    padding: 16px 20px;
+    margin: 12px 0 20px;
+  }
+  .detail-card.green { border-left-color: var(--accent3); }
+  .detail-card.red   { border-left-color: var(--accent2); }
+  .detail-card.blue  { border-left-color: var(--accent4); }
+  .detail-card strong { display: block; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); margin-bottom: 6px; }
+
+  /* ── POLICY LIST ── */
+  .plist { list-style: none; padding: 0; margin: 8px 0 16px; }
+  .plist li {
+    padding: 8px 0 8px 20px; position: relative;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    color: #c8ccd8; font-size: 13px; line-height: 1.65;
+  }
+  .plist li::before {
+    content: '▸'; position: absolute; left: 0;
+    color: var(--accent); font-size: 10px; top: 11px;
+  }
+  .plist li strong { color: var(--text); }
+
+  /* ── SUMMARY BOX ── */
+  .summary-box {
+    display: grid; grid-template-columns: repeat(4,1fr); gap: 12px;
+    margin: 20px 0 32px;
+  }
+  .sbox {
+    background: var(--surface2); border-radius: 4px;
+    padding: 14px 16px; text-align: center;
+    border-top: 2px solid var(--border);
+  }
+  .sbox.green { border-top-color: var(--accent3); }
+  .sbox.red   { border-top-color: var(--accent2); }
+  .sbox.blue  { border-top-color: var(--accent4); }
+  .sbox.gold  { border-top-color: var(--accent); }
+  .sbox .n { font-size: 22px; font-weight: 700; font-family: 'IBM Plex Mono', monospace; }
+  .sbox .l { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
+
+  /* ── NOTE ── */
+  .note { font-size: 12px; color: var(--muted); font-style: italic; margin-top: 4px; }
+
+  a.back { display: inline-block; margin-top: 40px; font-size: 11px; color: var(--muted); text-decoration: none; border: 1px solid var(--border); padding: 5px 12px; border-radius: 3px; font-family: 'IBM Plex Mono', monospace; }
+  a.back:hover { color: var(--text); border-color: var(--accent); }
+
+  hr.div { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+
+  ::-webkit-scrollbar { width: 4px; }
+  ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<nav id="sidebar">
+  <div class="sb-header">
+    <h2>🇳🇵 Nepal Budget 2083/84</h2>
+    <p>Duty, Tax & Policy Changes — Full Detail</p>
+  </div>
+  <div class="sb-search">
+    <input type="text" id="searchInput" placeholder="Filter sections…" oninput="filterNav(this.value)">
+  </div>
+
+  <div class="sb-section-title">Tax Changes</div>
+  <a href="#income-tax" class="sb-link"><span class="dot"></span>Income Tax</a>
+  <a href="#customs" class="sb-link"><span class="dot"></span>Customs Duty</a>
+  <a href="#excise" class="sb-link"><span class="dot"></span>Excise Duty</a>
+  <a href="#vat" class="sb-link"><span class="dot"></span>VAT Changes</a>
+  <a href="#green-tax" class="sb-link"><span class="dot"></span>Green Tax (New)</a>
+  <a href="#capital-gains" class="sb-link"><span class="dot"></span>Capital Gains Tax</a>
+  <a href="#social-security" class="sb-link"><span class="dot"></span>Social Security Tax</a>
+
+  <div class="sb-section-title">Sector-Specific</div>
+  <a href="#hydropower-export" class="sb-link"><span class="dot"></span>Hydropower — Private Export</a>
+  <a href="#hydropower-ppa" class="sb-link"><span class="dot"></span>Hydropower — PPA & Permits</a>
+  <a href="#hydropower-ownership" class="sb-link"><span class="dot"></span>Hydropower — Ownership Transfer</a>
+  <a href="#ev" class="sb-link"><span class="dot"></span>Electric Vehicles</a>
+  <a href="#it-sector" class="sb-link"><span class="dot"></span>IT / Software Sector</a>
+  <a href="#agriculture-tax" class="sb-link"><span class="dot"></span>Agriculture Tax</a>
+  <a href="#forest" class="sb-link"><span class="dot"></span>Forest & Timber</a>
+  <a href="#cinema" class="sb-link"><span class="dot"></span>Cinema / Entertainment</a>
+  <a href="#liquor" class="sb-link"><span class="dot"></span>Liquor / Brewery</a>
+  <a href="#insurance" class="sb-link"><span class="dot"></span>Insurance</a>
+  <a href="#housing" class="sb-link"><span class="dot"></span>Housing / Real Estate</a>
+  <a href="#capital-market" class="sb-link"><span class="dot"></span>Capital Market / Listed Cos.</a>
+  <a href="#disability" class="sb-link"><span class="dot"></span>Disability Goods</a>
+  <a href="#dev-finance" class="sb-link"><span class="dot"></span>Development Finance Orgs</a>
+
+  <div class="sb-section-title">Structural / Legal</div>
+  <a href="#foreign-investment" class="sb-link"><span class="dot"></span>Foreign Investment Rules</a>
+  <a href="#dispute-resolution" class="sb-link"><span class="dot"></span>Tax Dispute Settlement</a>
+  <a href="#customs-admin" class="sb-link"><span class="dot"></span>Customs Admin Reform</a>
+  <a href="#revenue-admin" class="sb-link"><span class="dot"></span>Revenue Admin Reform</a>
+  <a href="#local-tax" class="sb-link"><span class="dot"></span>Local Government Tax Rules</a>
+  <a href="#non-tax" class="sb-link"><span class="dot"></span>Non-Tax Revenue</a>
+
+  <div class="sb-section-title">Removed</div>
+  <a href="#abolished" class="sb-link"><span class="dot"></span>Abolished / Repealed</a>
+</nav>
+
+<!-- MAIN -->
+<main id="main" id="top">
+  <div class="page-title">
+    <div class="tag">Nepal Budget 2083/84 · FY 2026/27</div>
+    <h1>Duty, Tax & Key Policy Changes<br><span style="color:var(--muted);font-weight:300">Complete Detailed Reference</span></h1>
+    <p>Every duty, tax, exemption, policy change, and structural reform extracted from the Budget Speech — including provisions missed in general summaries. All figures sourced directly from the budget speech document.</p>
+  </div>
+
+  <!-- SUMMARY COUNTS -->
+  <div class="summary-box">
+    <div class="sbox green"><div class="n">12+</div><div class="l">Duties Reduced / Exempted</div></div>
+    <div class="sbox red"><div class="n">4</div><div class="l">Duties / Taxes Increased</div></div>
+    <div class="sbox blue"><div class="n">8+</div><div class="l">New Provisions Introduced</div></div>
+    <div class="sbox gold"><div class="n">6+</div><div class="l">Taxes / Levies Abolished</div></div>
+  </div>
+
+  <!-- ═══ INCOME TAX ═══ -->
+  <div class="section" id="income-tax">
+    <div class="section-header">
+      <h2>Income Tax Changes</h2>
+      <span class="para">Para 7(क), 68</span>
+    </div>
+
+    <table class="change-table">
+      <thead><tr><th>What Changed</th><th>Before</th><th>After / New Rule</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>Personal income tax exemption threshold</strong></td>
+          <td>NPR 5 lakh (approx.)</td>
+          <td><strong>NPR 10 lakh</strong> — doubled</td>
+          <td><span class="badge badge-down">Reduced</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Maximum personal income tax rate</strong></td>
+          <td>Previous rate</td>
+          <td>Reduced by <strong>10 percentage points</strong></td>
+          <td><span class="badge badge-down">Reduced</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>IT sector export income tax exemption</strong></td>
+          <td>Normal tax rate</td>
+          <td><strong>50% tax exemption</strong> on income earned from IT service exports</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Sweat equity — IT employees</strong></td>
+          <td>Taxed as normal income</td>
+          <td><strong>100% exemption</strong> from taxable income computation for sweat equity received by IT sector employees</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Residential building insurance deduction</strong></td>
+          <td>No deduction allowed</td>
+          <td>Up to <strong>NPR 10,000</strong> per year deductible from taxable income for residential building insurance premiums</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Development finance organisation interest income</strong></td>
+          <td>Interest taxed normally</td>
+          <td><strong>Income tax exemption</strong> on interest earned by non-profit development finance institutions (fully owned by partner countries) lending in Nepal</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Agro-processing industry — income tax</strong></td>
+          <td>Normal corporate tax</td>
+          <td><strong>Full income tax exemption for first 10 years</strong> for agro-processing industries</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>New cinema halls — income tax</strong> (outside metro/sub-metro areas)</td>
+          <td>Normal corporate tax</td>
+          <td><strong>Full income tax exemption for first 10 years</strong></td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Involuntary inheritance / ownership transfer in regulated entities</strong></td>
+          <td>Section 57 of Income Tax Act 2058 applied (deemed disposal)</td>
+          <td>Section 57 of the Income Tax Act 2058 <strong>will NOT be triggered</strong> on involuntary transfers (e.g. death of natural person, ownership change within regulated entities)</td>
+          <td><span class="badge badge-new">New exemption</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Capital gains tax — land acquired for development projects</strong></td>
+          <td>Full capital gains tax</td>
+          <td><strong>No capital gains tax</strong> up to the government's officially assessed/registered value when land is acquired for development construction projects</td>
+          <td><span class="badge badge-new">New exemption</span></td>
+        </tr>
+        <tr>
+          <td><strong>Civil servant performance allowance</strong></td>
+          <td>Not in place</td>
+          <td>New 10% monthly performance incentive allowance introduced. Starting scale salary increased 10%. Total effective net salary increase ~21%</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="detail-card green">
+      <strong>Key Impact — Income Tax Threshold</strong>
+      The income tax exemption threshold being doubled to NPR 10 lakh (NPR 1,000,000) is the single biggest personal income tax relief in this budget. Combined with the 10 percentage point cut in the maximum rate, this significantly reduces the burden on middle-income earners and salaried workers.
+    </div>
+  </div>
+
+  <!-- ═══ CUSTOMS DUTY ═══ -->
+  <div class="section" id="customs">
+    <div class="section-header">
+      <h2>Customs Duty Changes</h2>
+      <span class="para">Para 7(ख), 69, 71</span>
+    </div>
+
+    <table class="change-table">
+      <thead><tr><th>Item / Category</th><th>Before</th><th>After</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>Industrial raw materials (273 types)</strong></td>
+          <td>Customs duty sometimes equal to or higher than finished goods</td>
+          <td>Duty reduced so raw materials are <strong>at least one tier lower</strong> than finished/manufactured goods duty</td>
+          <td><span class="badge badge-down">Reduced</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Customs duty tiers / slabs</strong></td>
+          <td><strong>11 tiers</strong></td>
+          <td>Reduced to <strong>7 tiers</strong></td>
+          <td><span class="badge badge-down">Simplified</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Raw materials for artificial limbs & disability aids</strong></td>
+          <td>Standard customs duty</td>
+          <td><strong>Full customs duty exemption</strong> for imports by industries manufacturing artificial limbs and disability support materials domestically</td>
+          <td><span class="badge badge-down">Exempted</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Cold storage, packaging & testing lab machinery</strong> (for agro-processing)</td>
+          <td>Standard duty + VAT</td>
+          <td><strong>VAT exemption</strong> on import of cold storage, packaging, and testing lab machinery and equipment for agro-processing industries</td>
+          <td><span class="badge badge-down">Exempted</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>"Domestic Production Promotion Levy" (आन्तरिक उत्पादन प्रवर्धन शुल्क)</strong></td>
+          <td>Did not exist</td>
+          <td><strong>New levy</strong> introduced on certain imported goods to protect and promote domestic production</td>
+          <td><span class="badge badge-new">New levy</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>"Clean Infrastructure Investment Levy" (स्वच्छ पूर्वाधार लगानी शुल्क)</strong></td>
+          <td>Did not exist</td>
+          <td><strong>New levy</strong> at the customs point on imports for EV domestic production, EV charging station construction, and battery management — to fund clean infrastructure</td>
+          <td><span class="badge badge-new">New levy</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Electric Vehicles — customs duty basis</strong></td>
+          <td>Duty based on <strong>peak power capacity</strong> (kW)</td>
+          <td>Duty changed to <strong>value-based (ad valorem)</strong> — i.e. based on the declared/transaction value of the vehicle</td>
+          <td><span class="badge badge-changed">Basis changed</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Temporary import of vehicles for land-crossing tourists</strong></td>
+          <td>Complex paper-based declaration and manual payment</td>
+          <td>Declaration at border customs, fee payment to be done <strong>online/automated</strong></td>
+          <td><span class="badge badge-changed">Simplified</span></td>
+        </tr>
+        <tr>
+          <td><strong>Wedding tourism goods</strong></td>
+          <td>Manual deposit and refund process</td>
+          <td>Declaration of goods brought for wedding purposes, deposit and refund system to be <strong>fully automated</strong></td>
+          <td><span class="badge badge-changed">Automated</span></td>
+        </tr>
+        <tr>
+          <td><strong>"Green Tax" consolidation</strong></td>
+          <td>Multiple separate levies at customs: Prior Development Tax, Road Maintenance & Improvement Surcharge, and others collected at customs point</td>
+          <td>All these scattered customs-point levies <strong>merged into one "Green Tax"</strong> (हरित कर)</td>
+          <td><span class="badge badge-changed">Consolidated</span></td>
+        </tr>
+        <tr>
+          <td><strong>Authorised Business Person (ABP) — Blue Lane</strong></td>
+          <td>All importers face same customs process</td>
+          <td>Trusted/compliant businesses to be given <strong>"Blue Lane" fast-track clearance</strong> at customs</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+        <tr>
+          <td><strong>SAFTA Sensitive List</strong></td>
+          <td>Existing sensitive list</td>
+          <td>To be <strong>reviewed and revised</strong> in current context</td>
+          <td><span class="badge badge-changed">Under review</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="detail-card blue">
+      <strong>Green Tax — What It Replaces</strong>
+      The prior development tax (पूर्वाधार विकास कर), road maintenance and improvement surcharge (सडक मर्मत तथा सुधार दस्तुर), and similar levies collected at the customs point are being merged into a single "Green Tax" (हरित कर). This simplifies compliance for importers — instead of calculating and paying multiple separate levies, there is now one consolidated charge.
+    </div>
+  </div>
+
+  <!-- ═══ EXCISE DUTY ═══ -->
+  <div class="section" id="excise">
+    <div class="section-header">
+      <h2>Excise Duty Changes</h2>
+      <span class="para">Para 7(ग), 69(ङ), 70(घ)</span>
+    </div>
+
+    <table class="change-table">
+      <thead><tr><th>Item / Category</th><th>Before</th><th>After</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-red">
+          <td><strong>Cigarettes / Tobacco (सुर्तिजन्य पदार्थ)</strong></td>
+          <td>Existing excise rate</td>
+          <td>Increased by <strong>approximately 10%</strong></td>
+          <td><span class="badge badge-up">Increased</span></td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Alcohol / Spirits (मदिरा)</strong></td>
+          <td>Existing excise rate</td>
+          <td><strong>Increased</strong> (exact percentage not specified in speech)</td>
+          <td><span class="badge badge-up">Increased</span></td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Beer (बियर)</strong></td>
+          <td>Existing excise rate</td>
+          <td><strong>Increased</strong> (exact percentage not specified in speech)</td>
+          <td><span class="badge badge-up">Increased</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Excise duty on 360 goods</strong></td>
+          <td>Excise duty applied on 360 types of goods</td>
+          <td><strong>Excise duty abolished / removed</strong> on all 360 goods</td>
+          <td><span class="badge badge-removed">Abolished</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Digital excise tickets (डिजिटल अन्तःशुल्क टिकट)</strong></td>
+          <td>Physical/paper excise stamps</td>
+          <td><strong>Digital excise tickets</strong> to replace physical stamps; electronic track-and-trace system to control evasion</td>
+          <td><span class="badge badge-new">New system</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Micro-breweries (माइक्रो ब्रुअरी)</strong></td>
+          <td>Not formally in excise framework</td>
+          <td>From next fiscal year, micro-breweries to be <strong>formally registered</strong> as liquor industries and brought within the <strong>excise duty framework</strong></td>
+          <td><span class="badge badge-new">New scope</span></td>
+        </tr>
+        <tr>
+          <td><strong>Self-clearance / exit-permit system</strong> for excise</td>
+          <td>Physical control-based excise administration requiring manual checks</td>
+          <td>Physical control-based system to be <strong>gradually converted to risk-based self-clearance (स्वयं निष्कासन प्रणाली)</strong></td>
+          <td><span class="badge badge-changed">Reformed</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Export of Nepali brand spirits / liquor</strong></td>
+          <td>Limited/no specific promotion mechanism</td>
+          <td>Quality spirit (distilled spirits) production and <strong>maturation (aging) to be incentivised</strong> to promote exports of Nepali-branded liquor in global markets</td>
+          <td><span class="badge badge-new">New incentive</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="detail-card red">
+      <strong>Sin Tax Increases — Tobacco, Alcohol, Beer</strong>
+      Cigarettes face approximately 10% excise increase. Alcohol and beer also face increased excise (percentages to be specified in the Finance Ordinance/Act). These "sin taxes" are standard revenue and health-policy measures. Simultaneously, excise on 360 other goods has been completely abolished — a major simplification.
+    </div>
+  </div>
+
+  <!-- ═══ VAT ═══ -->
+  <div class="section" id="vat">
+    <div class="section-header">
+      <h2>VAT (Value Added Tax) Changes</h2>
+      <span class="para">Para 7(च), 7(छ), 69(ख)</span>
+    </div>
+
+    <table class="change-table">
+      <thead><tr><th>Change</th><th>Details</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>Digital payment VAT discount — 10%</strong></td>
+          <td>Consumers who pay <strong>digitally</strong> and receive an e-invoice at the time of purchase will get a <strong>10% VAT discount</strong>. This is to promote invoice culture and digital payments simultaneously.</td>
+          <td><span class="badge badge-down">Discount</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>VAT refund — automated</strong></td>
+          <td>The VAT refund system to be made <strong>fully automated</strong>. Currently refunds require manual processing. This removes friction for exporters and businesses claiming VAT refunds.</td>
+          <td><span class="badge badge-new">System</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Invoice Lottery (बीजक लट्री)</strong></td>
+          <td><strong>New lottery system</strong> to encourage invoice-taking culture. Consumers who take invoices will be eligible for lottery prizes — standard global method to increase VAT compliance.</td>
+          <td><span class="badge badge-new">New programme</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>VAT on electricity — above 50 units/month</strong></td>
+          <td>Electricity VAT treatment for end consumers</td>
+          <td>For electricity consumption <strong>above 50 units per month</strong> sold to final end consumers, VAT will be levied at a <strong>subsidised/concessional rate</strong> (not the full standard rate).</td>
+          <td><span class="badge badge-changed">Concessional rate</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Advisory committee on multiple VAT rates</strong></td>
+          <td>Nepal has a standard single rate but some exemptions/zero-ratings exist</td>
+          <td>A <strong>high-level advisory committee</strong> to be formed to study and recommend on the continued relevance of having multiple VAT rates/structures.</td>
+          <td><span class="badge badge-new">Policy study</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>VAT exemption on private education & health in remote areas</strong></td>
+          <td>No specific concession for remote-area private services</td>
+          <td>Private sector education and health services in <strong>remote/difficult areas</strong> to face a <strong>minimum "equity surcharge" (समता शुल्क)</strong> instead of full VAT — to make services viable in these areas. (This is a special concessional VAT structure for qualifying remote services.)</td>
+          <td><span class="badge badge-changed">Special rate</span></td>
+        </tr>
+        <tr>
+          <td><strong>Mandatory Central Invoice Monitoring System</strong></td>
+          <td>Not all businesses required to connect</td>
+          <td>All businesses with annual turnover <strong>above NPR 10 crore</strong> mandatorily connected to the Central Invoice Monitoring System (केन्द्रीय बीजक अनुगमन प्रणाली). Small businesses encouraged via incentives.</td>
+          <td><span class="badge badge-new">Mandatory</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ GREEN TAX ═══ -->
+  <div class="section" id="green-tax">
+    <div class="section-header">
+      <h2>Green Tax — New Consolidated Levy</h2>
+      <span class="para">Para 7(ग)</span>
+    </div>
+    <div class="detail-card">
+      <strong>What is the Green Tax?</strong>
+      The budget consolidates several scattered levies that were previously collected at the customs point into a single "Green Tax" (हरित कर). The levies being merged include: Prior Development Tax (पूर्वाधार विकास कर), Road Maintenance Surcharge (सडक मर्मत दस्तुर), Road Improvement Surcharge (सडक सुधार दस्तुर), and similar charges. Instead of importers having to calculate and pay these separately, there is now one single Green Tax. This is a structural simplification — it does not necessarily mean a tax reduction, but reduces compliance complexity.
+    </div>
+  </div>
+
+  <!-- ═══ CAPITAL GAINS TAX ═══ -->
+  <div class="section" id="capital-gains">
+    <div class="section-header">
+      <h2>Capital Gains Tax Changes</h2>
+      <span class="para">Para 7(ङ), 7(घ)</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Item</th><th>Before</th><th>After</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>Capital gains tax on listed company shares</strong></td>
+          <td>Capital gains tax was levied but required separate annual settlement / was not final withholding</td>
+          <td>Capital gains tax on sale of listed company shares made <strong>FINAL</strong> — i.e. withholding at source is the final tax liability, no further assessment/settlement needed</td>
+          <td><span class="badge badge-changed">Finalised (simpler)</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Land acquisition for development projects</strong></td>
+          <td>Full capital gains tax on land sold for development projects</td>
+          <td>Capital gains tax <strong>exempted</strong> on land acquired for development construction projects — up to the government's officially assessed registration value</td>
+          <td><span class="badge badge-down">Exempted</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Non-Resident Nepalis (NRN) in secondary share market</strong></td>
+          <td>NRNs had limited/no participation in the listed secondary market</td>
+          <td>Legal amendments to foreign investment approval, investment accounting, profit repatriation, and <strong>capital gains tax provisions</strong> for NRNs to participate in the secondary (listed) share market</td>
+          <td><span class="badge badge-new">New access</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ HYDROPOWER — PRIVATE EXPORT ═══ -->
+  <div class="section" id="hydropower-export">
+    <div class="section-header">
+      <h2>Hydropower — Private Sector International Energy Trade</h2>
+      <span class="para">Para 20</span>
+    </div>
+
+    <div class="detail-card blue">
+      <strong>This is a Major New Policy — Private Sector Can Now Export Power</strong>
+      Para 20 of the budget speech states: "Private sector will be given arrangements to trade electricity in international markets." Previously, only the state utility (NEA) could engage in cross-border electricity trade. This opens international energy trade to private hydropower producers — a significant policy shift.
+    </div>
+
+    <table class="change-table">
+      <thead><tr><th>Policy Change</th><th>Before</th><th>After (New Provision)</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-blue">
+          <td><strong>Private sector cross-border electricity trading</strong></td>
+          <td>Only NEA (state utility) could trade electricity across borders. Private producers had to sell to NEA at regulated prices.</td>
+          <td><strong>Private sector producers will be allowed to trade electricity directly in international markets</strong> — they can build their own transmission lines and charge "wheeling charges" for power trading. Legal provisions to be put in place.</td>
+          <td><span class="badge badge-new">New right</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Private transmission lines for export</strong></td>
+          <td>Transmission infrastructure owned/controlled by state</td>
+          <td>Private sector can build transmission lines. Will be able to charge wheeling fees. This enables end-to-end private electricity export infrastructure.</td>
+          <td><span class="badge badge-new">New provision</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Reservoir projects — early public share sale</strong></td>
+          <td>Public share (IPO) typically done after project completion</td>
+          <td>For large reservoir projects: if promoters guarantee 100% investment in the reservoir project, they may sell <strong>up to 40% shares to the general public in the very first year</strong> — before construction is complete. This allows capital raising and public participation earlier.</td>
+          <td><span class="badge badge-new">New incentive</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ HYDROPOWER — PPA & PERMITS ═══ -->
+  <div class="section" id="hydropower-ppa">
+    <div class="section-header">
+      <h2>Hydropower — PPA, Permits & NEA Restructuring</h2>
+      <span class="para">Para 19, 20</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Policy</th><th>Before</th><th>After</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-red">
+          <td><strong>Permits for PPA-signed but unstarted projects</strong></td>
+          <td>Projects with signed PPAs but not yet under construction retained their licences</td>
+          <td>Licences/permits of projects that have signed PPAs but have <strong>not yet started construction will be CANCELLED</strong>. New PPAs to be signed under "Take or Pay" model.</td>
+          <td><span class="badge badge-changed">Stricter</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>PPA for sub-10 MW projects</strong></td>
+          <td>PPAs for small projects were delayed / uncertain</td>
+          <td><strong>Immediate PPAs</strong> to be given for all power projects below 10 MW capacity</td>
+          <td><span class="badge badge-new">New provision</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Dry season electricity purchase rate</strong></td>
+          <td>No specific dry-season purchase rate determination mechanism</td>
+          <td>During dry season (low water, high demand), electricity <strong>purchase rates to be specifically determined</strong> and purchase agreements signed at those rates</td>
+          <td><span class="badge badge-new">New mechanism</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>NEA split into 3 companies</strong></td>
+          <td>Nepal Electricity Authority — single integrated utility</td>
+          <td>NEA to be restructured into <strong>three separate companies</strong>: (1) Generation Company, (2) Transmission Company, (3) Distribution and Trading Company</td>
+          <td><span class="badge badge-changed">Restructured</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Green Hydrogen pilot</strong></td>
+          <td>No commercial green hydrogen production</td>
+          <td><strong>2.5 MW green hydrogen pilot plant at Hetauda</strong> as a commercial production starter. Budget allocated for green hydrogen production activities.</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Battery Energy Storage System (BESS)</strong></td>
+          <td>No utility-scale storage</td>
+          <td><strong>100 MW battery energy storage system</strong> programme for Kathmandu Valley to address peak-hour electricity shortage during dry season</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ HYDROPOWER — OWNERSHIP TRANSFER ═══ -->
+  <div class="section" id="hydropower-ownership">
+    <div class="section-header">
+      <h2>Hydropower — Permit Expiry & Government Ownership Transfer</h2>
+      <span class="para">Para 20</span>
+    </div>
+    <div class="detail-card">
+      <strong>Forest Land & Tree Felling Fees — Adjusted at End of Permit</strong>
+      When a hydropower project's licence/permit expires and ownership transfers to the Government of Nepal, the forest land use fees and tree felling charges that were paid during the project's operational life will be <strong>adjusted/offset</strong> against the transfer value. This prevents double-charging — promoters won't be required to pay both historical forest fees and a full transfer premium. This is a policy that incentivises long-term private investment in hydropower.
+    </div>
+  </div>
+
+  <!-- ═══ ELECTRIC VEHICLES ═══ -->
+  <div class="section" id="ev">
+    <div class="section-header">
+      <h2>Electric Vehicles (EV) — Tax & Policy Changes</h2>
+      <span class="para">Para 69(ग)</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Change</th><th>Before</th><th>After</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-blue">
+          <td><strong>EV customs duty basis</strong></td>
+          <td>Based on <strong>peak power (kW)</strong> — a flat rate per kilowatt of motor power</td>
+          <td>Changed to <strong>ad valorem (value-based)</strong> — duty as a percentage of the declared/transaction value of the vehicle. More equitable across price segments.</td>
+          <td><span class="badge badge-changed">Basis changed</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>"Clean Infrastructure Investment Levy" on EV-related imports</strong></td>
+          <td>No such levy</td>
+          <td>A new <strong>levy at customs</strong> on imports for: (1) domestic EV manufacturing, (2) EV charging station construction, (3) battery management — proceeds fund clean infrastructure. (Note: this is a new cost on EV ecosystem imports, not the vehicle itself.)</td>
+          <td><span class="badge badge-new">New levy</span></td>
+        </tr>
+        <tr>
+          <td><strong>EV charging stations at petrol pumps</strong></td>
+          <td>Not mandated</td>
+          <td>Petrol pumps to be <strong>incentivised</strong> to install EV charging stations with minimum infrastructure requirements</td>
+          <td><span class="badge badge-new">New incentive</span></td>
+        </tr>
+        <tr>
+          <td><strong>Buy-on-hire / hire purchase for electrical appliances</strong></td>
+          <td>Banks not permitted for certain appliances</td>
+          <td>Banks and financial institutions will be allowed to offer <strong>hire purchase / buy-on-hire</strong> for household electrical appliances including washing machines, refrigerators, vacuum cleaners — to promote electricity consumption and reduce pollution</td>
+          <td><span class="badge badge-new">New provision</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ IT SECTOR ═══ -->
+  <div class="section" id="it-sector">
+    <div class="section-header">
+      <h2>IT / Software / Digital Sector — Tax Changes</h2>
+      <span class="para">Para 17, 68(क), 68(ख)</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Change</th><th>Before</th><th>After</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>IT service export income — 50% tax exemption</strong></td>
+          <td>Normal income tax rate</td>
+          <td><strong>50% income tax exemption</strong> on income earned from exporting IT services — to make Nepal an IT export hub</td>
+          <td><span class="badge badge-down">Halved</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Sweat equity for IT employees — 100% tax exemption</strong></td>
+          <td>Sweat equity (shares/options given as part of compensation) taxed as income</td>
+          <td><strong>Full 100% exemption</strong> from taxable income for sweat equity received by IT sector employees — major incentive for tech startup employee compensation</td>
+          <td><span class="badge badge-down">Fully exempt</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Sovereign AI Computing Centre</strong></td>
+          <td>No such facility</td>
+          <td>Nepal's first Sovereign AI Computing Centre at Syuchatar, Kathmandu. Thousands of GPU units to be procured. Subsidised compute access for AI entrepreneurs and startups.</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Remote work / digital nomad framework</strong></td>
+          <td>No clear legal provision for Nepalis working for foreign employers remotely</td>
+          <td>Clear legal framework for Nepalis to <strong>work in Nepal for foreign employers</strong> and to attract foreign remote workers to Nepal</td>
+          <td><span class="badge badge-new">New law</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Foreign investment in IT sector</strong></td>
+          <td>Limited/restricted foreign investment in IT services</td>
+          <td>IT sector investment to be <strong>opened for foreign investors</strong></td>
+          <td><span class="badge badge-new">Liberalised</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ AGRICULTURE ═══ -->
+  <div class="section" id="agriculture-tax">
+    <div class="section-header">
+      <h2>Agriculture — Tax & Duty Implications</h2>
+      <span class="para">Para 24, 50, 73(च)</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Change</th><th>Details</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>Agro-processing industry — 10-year full income tax exemption</strong></td>
+          <td>Agro-processing industries to receive <strong>complete income tax exemption for first 10 years</strong> of operation — a strong incentive to set up food processing industries</td>
+          <td><span class="badge badge-down">Exempt</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Cold storage, packaging & testing machinery — VAT exemption on import</strong></td>
+          <td>Import of cold storage equipment, packaging machinery, and food testing laboratory equipment for agro-processing gets <strong>VAT exemption</strong></td>
+          <td><span class="badge badge-down">Exempt</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Agriculture & livestock insurance — up to 80% premium subsidy</strong></td>
+          <td>Lower subsidy rates</td>
+          <td>Premium subsidy on agricultural and livestock insurance raised to <strong>up to 80%</strong>. Other existing agricultural subsidies to be gradually phased out and replaced with this insurance model.</td>
+          <td><span class="badge badge-down">Higher subsidy</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>40% capital subsidy for farm investment (pilot)</strong></td>
+          <td>No such large capital subsidy</td>
+          <td>Farmers investing minimum NPR 2 crore in agriculture/livestock to receive <strong>up to 40% initial capital investment subsidy</strong>. This subsidy reduces by 10% each year for 4 years once production starts.</td>
+          <td><span class="badge badge-new">New pilot</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Green urea (fertiliser) — subsidised electricity for production</strong></td>
+          <td>Urea fully imported</td>
+          <td>Private sector to produce green (clean) urea domestically; government will provide electricity at <strong>subsidised/concessional rates</strong> with a purchase guarantee agreement via Nepal Oil Corporation</td>
+          <td><span class="badge badge-new">New incentive</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Warehouse receipt financing</strong></td>
+          <td>No structured warehouse receipt system</td>
+          <td>Farmers can get <strong>credit/loans based on certified warehouse receipts</strong> for stored agricultural produce — improves financial access without land collateral</td>
+          <td><span class="badge badge-new">New mechanism</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ FOREST ═══ -->
+  <div class="section" id="forest">
+    <div class="section-header">
+      <h2>Forest, Timber & Environment — Policy Changes</h2>
+      <span class="para">Para 13, 25</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Change</th><th>Before</th><th>After</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>Environmental Impact Assessment (EIA) — supplementary EIA waiver</strong></td>
+          <td>If actual forest area or number of trees to be felled was <em>less</em> than what was approved in the EIA report, a supplementary EIA was still required</td>
+          <td><strong>No supplementary EIA required</strong> if the actual forest area or tree count to be felled is <em>less than</em> what was in the approved EIA. Reduces regulatory burden on projects that have a smaller footprint than originally planned.</td>
+          <td><span class="badge badge-down">Reduced burden</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Forest clearance approval chain</strong></td>
+          <td>Multiple sequential approvals required — described as a "multi-chain" process</td>
+          <td>The <strong>chain of approvals</strong> from forest area clearance through to tree-felling orders to be <strong>significantly reduced</strong></td>
+          <td><span class="badge badge-down">Simplified</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Timber sale price from development projects</strong></td>
+          <td>Fixed government price for raw timber extracted during construction</td>
+          <td>Sale price of raw timber collected during development/construction projects to be <strong>reviewed/revised</strong> to improve competitiveness of domestic timber industry</td>
+          <td><span class="badge badge-changed">Under review</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Forest permit system — fully digital & single-window</strong></td>
+          <td>Paper-based, multi-step permit system for forest product cutting, collection, transport, and sale</td>
+          <td>Entire permit process to be made <strong>fully digital and single-window</strong></td>
+          <td><span class="badge badge-new">Digital reform</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Carbon credits — REDD+ programme</strong></td>
+          <td>No structured benefit-sharing for communities</td>
+          <td>Results-based REDD+ programme (reducing emissions from deforestation) to be operated with <strong>priority benefit-sharing for local communities</strong> from carbon credit revenues</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Community forest groups — full autonomy</strong></td>
+          <td>Restrictions on community forest user groups in production, processing, branding, and enterprise</td>
+          <td>Community forest user groups to receive <strong>full/additional autonomy</strong> in production, processing, branding, and enterprise operation</td>
+          <td><span class="badge badge-new">Expanded rights</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Environment & Forest Act amendments</strong></td>
+          <td>Environment Protection Act 2076 and Forest Act 2076 in current form</td>
+          <td>Both acts to be <strong>amended</strong> to resolve inconsistencies with industry, energy, and infrastructure laws — reducing conflicts between development and conservation</td>
+          <td><span class="badge badge-changed">To be amended</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ CINEMA ═══ -->
+  <div class="section" id="cinema">
+    <div class="section-header">
+      <h2>Cinema / Entertainment — Tax Changes</h2>
+      <span class="para">Para 68(ङ)</span>
+    </div>
+    <div class="detail-card green">
+      <strong>New Cinema Halls — Full 10-Year Income Tax Holiday</strong>
+      New cinema halls (movie theatres) established outside Metropolitan Municipalities (महानगरपालिका) and Sub-Metropolitan Municipalities (उपमहानगरपालिका) will receive complete income tax exemption for the first 10 years of operation. This is designed to promote cinema infrastructure in smaller cities and towns that currently lack proper theatre facilities.
+    </div>
+  </div>
+
+  <!-- ═══ LIQUOR ═══ -->
+  <div class="section" id="liquor">
+    <div class="section-header">
+      <h2>Liquor / Alcohol Industry — Policy Changes</h2>
+      <span class="para">Para 69(घ)</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Change</th><th>Details</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-red">
+          <td><strong>Excise on alcohol, beer — increased</strong></td>
+          <td>Excise duty on all types of alcohol (मदिरा) and beer (बियर) increased. Exact rates to be in Finance Act. Standard public health and revenue measure.</td>
+          <td><span class="badge badge-up">Increased</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Micro-breweries formally recognised</strong></td>
+          <td>Micro-breweries not formally classified as liquor industries; their tax/excise treatment was unclear</td>
+          <td>From next fiscal year, micro-breweries to be <strong>registered as liquor industries</strong> and brought under the <strong>excise duty framework</strong>. Formalises a growing sector.</td>
+          <td><span class="badge badge-new">Formalised</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Nepali brand spirits export — incentivised</strong></td>
+          <td>No specific incentive for quality spirit production and export</td>
+          <td>Quality distilled spirit production and <strong>maturation (aging)</strong> incentivised. Nepal Oil Corporation to provide purchase guarantees for ethanol. Aim: build export-quality Nepali liquor brands.</td>
+          <td><span class="badge badge-new">New incentive</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ INSURANCE ═══ -->
+  <div class="section" id="insurance">
+    <div class="section-header">
+      <h2>Insurance — Policy & Tax Changes</h2>
+      <span class="para">Para 32, 60, 73(घ)</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Change</th><th>Details</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>Residential building insurance — income tax deduction</strong></td>
+          <td>No income tax deduction for insurance premiums on residential buildings</td>
+          <td>Up to <strong>NPR 10,000 per year deductible</strong> from taxable income for residential building insurance premiums</td>
+          <td><span class="badge badge-new">New deduction</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Mandatory building insurance</strong></td>
+          <td>Not mandated for urban construction</td>
+          <td>In urban areas, building insurance to be made <strong>mandatory at the time of map/design approval</strong> for new buildings</td>
+          <td><span class="badge badge-new">New mandate</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Third-party vehicle insurance — maximum sum insured raised to NPR 10 lakh</strong></td>
+          <td>Third party insurance maximum had not increased for a long time</td>
+          <td>Third-party insurance coverage (बीमाङ्क) raised to <strong>NPR 10 lakh</strong></td>
+          <td><span class="badge badge-changed">Increased coverage</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Accident, critical illness & fire insurance — mandatory</strong></td>
+          <td>Not mandatory</td>
+          <td>Accident (दुर्घटना), critical/fatal illness (घातक रोग), and fire (ढुवानी / आगलागी) insurance to be made <strong>mandatory</strong></td>
+          <td><span class="badge badge-new">New mandate</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Vehicle accident device (telematics) — mandatory</strong></td>
+          <td>Not required</td>
+          <td>All vehicles must have an <strong>accident telematics device</strong> installed — to reduce accidents and support insurance claims</td>
+          <td><span class="badge badge-new">New mandate</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Nepal Reinsurance — mandatory 20% domestic reinsurance</strong></td>
+          <td>Reinsurance arrangements varied</td>
+          <td>At least <strong>20% of all insurance policies</strong> issued by Nepali insurance companies must be reinsured through Nepal Reinsurance Company. Remaining can be reinsured with foreign reinsurers for risk diversification.</td>
+          <td><span class="badge badge-new">New rule</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Health insurance — universal coverage target</strong></td>
+          <td>~37% of population covered</td>
+          <td>Target: <strong>90% of Nepalis within health insurance within 3 years</strong>. NPR 15 crore allocated for health insurance programme.</td>
+          <td><span class="badge badge-new">Target</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Tilganga Eye Institute — lens production incentive</strong></td>
+          <td>Normal tax treatment</td>
+          <td>Tilganga Eye Institute to be provided <strong>tax concessions</strong> to promote/incentivise lens production domestically</td>
+          <td><span class="badge badge-down">Tax concession</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ HOUSING / REAL ESTATE ═══ -->
+  <div class="section" id="housing">
+    <div class="section-header">
+      <h2>Housing, Real Estate & Land</h2>
+      <span class="para">Para 10(ङ), 73(ङ)</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Change</th><th>Before</th><th>After</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>Land acquisition for development projects — capital gains tax</strong></td>
+          <td>Full capital gains tax on the difference between purchase price and sale price</td>
+          <td><strong>No capital gains tax</strong> on the gain up to the government's official assessed (registration) value when selling land for development projects</td>
+          <td><span class="badge badge-down">Exempted</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Foreign investors — long-term apartment lease</strong></td>
+          <td>Foreign investors could not take long-term residential leases</td>
+          <td>Civil Code 2074 to be amended to allow foreign investors, international organisations, MNC branches to take residential apartments on <strong>long-term lease</strong> — up to 25% of total units in a building, in government-designated locations</td>
+          <td><span class="badge badge-new">New provision</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Online land admin — 35 municipalities</strong></td>
+          <td>Manual land administration</td>
+          <td>Unified online land administration services (property registration, blocking, buying/selling, revenue payment) to start in <strong>35 municipalities</strong> from this year</td>
+          <td><span class="badge badge-new">Digital reform</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Industrial estate structures as bank collateral</strong></td>
+          <td>Structures in industrial estates/SEZs built on leased land could not be used as collateral</td>
+          <td>Structures built in industrial estates, SEZs, and on leased land to be able to be <strong>used as banking collateral</strong></td>
+          <td><span class="badge badge-new">New provision</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ CAPITAL MARKET ═══ -->
+  <div class="section" id="capital-market">
+    <div class="section-header">
+      <h2>Capital Market & Listed Companies</h2>
+      <span class="para">Para 36</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Change</th><th>Before</th><th>After</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>Capital gains tax on listed shares — FINAL withholding</strong></td>
+          <td>Withholding tax at source plus potential further assessment</td>
+          <td>Capital gains tax made <strong>final</strong> at withholding point — no further tax obligation on listed share transactions</td>
+          <td><span class="badge badge-changed">Finalised</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Global Depositary Receipts (GDR)</strong></td>
+          <td>Listed Nepali companies could not list in foreign stock markets</td>
+          <td>Listed companies completing specified procedures will be allowed to issue <strong>GDRs and list in foreign stock markets</strong></td>
+          <td><span class="badge badge-new">New provision</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Intraday trading, short selling, derivatives</strong></td>
+          <td>Not allowed on NEPSE</td>
+          <td>NEPSE restructuring to proceed; <strong>phased introduction of intraday trading, short selling, and derivative instruments</strong></td>
+          <td><span class="badge badge-new">New products</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>NRN participation in secondary share market</strong></td>
+          <td>NRNs had limited access to NEPSE secondary market</td>
+          <td>Legal amendments to enable NRNs to participate in the secondary (listed) share market, including foreign investment approval, accounting, profit repatriation, and capital gains tax provisions</td>
+          <td><span class="badge badge-new">New access</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ DISABILITY GOODS ═══ -->
+  <div class="section" id="disability">
+    <div class="section-header">
+      <h2>Disability & Assistive Technology</h2>
+      <span class="para">Para 73(ग)</span>
+    </div>
+    <div class="detail-card green">
+      <strong>Customs Duty Exemption — Artificial Limbs & Disability Aid Raw Materials</strong>
+      Raw materials imported for domestic production of artificial limbs (कृत्रिम हातखुट्टा) and other disability assistive devices (अपाङ्गता सहयोगी सामग्री) will receive a full customs duty exemption. This incentivises domestic manufacturing of disability aids rather than importing finished products.
+    </div>
+  </div>
+
+  <!-- ═══ DEVELOPMENT FINANCE ═══ -->
+  <div class="section" id="dev-finance">
+    <div class="section-header">
+      <h2>Development Finance Organisations</h2>
+      <span class="para">Para 68(घ)</span>
+    </div>
+    <div class="detail-card blue">
+      <strong>Income Tax Exemption on Interest — Non-Profit DFIs</strong>
+      Interest income earned by non-profit development finance institutions (विकास वित्त संस्था) that are fully owned by partner countries/governments and invest/lend in Nepal will receive income tax exemption. This targets organisations like bilateral development banks and similar institutions that provide concessional financing — making Nepal a more attractive destination for such lending.
+    </div>
+  </div>
+
+  <!-- ═══ FOREIGN INVESTMENT ═══ -->
+  <div class="section" id="foreign-investment">
+    <div class="section-header">
+      <h2>Foreign Investment Rules — Key Legal Changes</h2>
+      <span class="para">Para 10(ख)(ग)</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Change</th><th>Before</th><th>After</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-green">
+          <td><strong>Foreign investment repatriation — NRB prior approval</strong></td>
+          <td>Prior approval from Nepal Rastra Bank required to repatriate foreign investment</td>
+          <td>Prior NRB approval <strong>removed</strong> — notification to NRB is sufficient. Major simplification for foreign investors exiting Nepal.</td>
+          <td><span class="badge badge-down">Deregulated</span></td>
+        </tr>
+        <tr class="hl-green">
+          <td><strong>Foreign investment — automatic approval</strong></td>
+          <td>Prior approval required for foreign investment in most sectors</td>
+          <td>Prior-approval requirement removed; <strong>automatic approval route</strong> to be expanded</td>
+          <td><span class="badge badge-down">Liberalised</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Scope of foreign investment instruments</strong></td>
+          <td>Limited to equity and loans</td>
+          <td>Scope expanded to include: <strong>convertible instruments, project-tied funding (project-linked funds), other hybrid instruments</strong></td>
+          <td><span class="badge badge-new">Expanded</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Remitting service fees, royalties, tech payments</strong></td>
+          <td>Complex approval process to remit service fees, royalties, and technology payments abroad</td>
+          <td>Process to be <strong>simplified</strong></td>
+          <td><span class="badge badge-changed">Simplified</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Investment Board projects — no re-approval from other agencies</strong></td>
+          <td>Projects approved by the Investment Board still required separate approvals from other ministries/agencies</td>
+          <td>Legal provision: projects approved by the Investment Board will <strong>NOT require further approvals from any other agency</strong> — one-stop clearance</td>
+          <td><span class="badge badge-new">One-stop</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Investment visa for project feasibility</strong></td>
+          <td>Limited/no specific investment visa for feasibility studies</td>
+          <td>Investment visa to be available for conducting <strong>feasibility studies and project research</strong> for approved projects</td>
+          <td><span class="badge badge-new">New visa type</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Limited liability partnership law</strong></td>
+          <td>No LLP framework in Nepal</td>
+          <td>New <strong>limited liability partnership law</strong> to be drafted — enables angel investment, venture capital, and private equity structures</td>
+          <td><span class="badge badge-new">New law</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Nepalis investing abroad</strong></td>
+          <td>Very restricted — Nepalis generally not allowed to invest abroad</td>
+          <td>Arrangements to <strong>facilitate Nepali citizens investing abroad</strong> to be established</td>
+          <td><span class="badge badge-new">New provision</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ TAX DISPUTE SETTLEMENT ═══ -->
+  <div class="section" id="dispute-resolution">
+    <div class="section-header">
+      <h2>Tax Dispute Settlement — Special Scheme</h2>
+      <span class="para">Para 7(ज), 7(झ)</span>
+    </div>
+    <div class="detail-card">
+      <strong>Two-Tier Dispute Resolution</strong>
+      The budget introduces two separate dispute resolution mechanisms:
+    </div>
+    <ul class="plist">
+      <li><strong>Administrative scheme (para 7ज):</strong> Long-standing tax disputes created by legal ambiguities or taxpayer ignorance — a special tax amnesty/concession scheme to be launched to resolve these and clear the backlog. Details on applicable taxes and discount rates to be in the Finance Act.</li>
+      <li><strong>Court / judicial body disputes (para 7झ):</strong> For tax disputes already before courts or judicial bodies (from either side — government or taxpayer): if the taxpayer pays the <strong>determined tax amount plus a 1% surcharge</strong> within the stipulated deadline after withdrawing the case, all penalties, fines, surcharges, delay charges, and interest will be <strong>completely waived</strong>. A powerful incentive for dispute clearance.</li>
+    </ul>
+    <div class="detail-card green">
+      <strong>Impact of Court Case Tax Settlement</strong>
+      The 1% surcharge + waiver of all penalties scheme for judicial disputes is significant. If a taxpayer has a large disputed tax amount sitting in court with years of accumulated interest and penalties (which can easily double or triple the principal), settling by paying principal + 1% and getting all interest/penalties waived is a major financial incentive. Expected to clear a large backlog of outstanding tax litigation.
+    </div>
+  </div>
+
+  <!-- ═══ CUSTOMS ADMIN ═══ -->
+  <div class="section" id="customs-admin">
+    <div class="section-header">
+      <h2>Customs Administration Reform</h2>
+      <span class="para">Para 71</span>
+    </div>
+    <ul class="plist">
+      <li><strong>Authorised Business Person (ABP) — Blue Lane:</strong> Trusted/compliant businesses to get fast-track "Blue Lane" customs clearance with minimal inspection.</li>
+      <li><strong>Online transaction-value-based clearance:</strong> Online customs clearance system to be further improved and made more transparent and realistic — reducing disputes over valuation.</li>
+      <li><strong>Post-clearance examination office restructured:</strong> The Post-Clearance Audit (PCA) office to be restructured for more effective post-import compliance checks.</li>
+      <li><strong>Land-crossing tourist vehicles:</strong> Temporary import declaration and fee payment for personal vehicles of land-crossing tourists to be available at all major customs offices and done online.</li>
+      <li><strong>Wedding tourism goods:</strong> Goods declaration, deposit collection, and deposit refund for wedding tourism visitors to be fully automated.</li>
+      <li><strong>Foreign currency limit:</strong> Tourists to be able to bring in convertible foreign currency up to the legally specified limit via a simplified process.</li>
+    </ul>
+  </div>
+
+  <!-- ═══ REVENUE ADMIN ═══ -->
+  <div class="section" id="revenue-admin">
+    <div class="section-header">
+      <h2>Revenue Administration Reform</h2>
+      <span class="para">Para 70</span>
+    </div>
+    <table class="change-table">
+      <thead><tr><th>Reform</th><th>Details</th><th>Type</th></tr></thead>
+      <tbody>
+        <tr class="hl-red">
+          <td><strong>Revenue Investigation Department — ABOLISHED</strong></td>
+          <td>The Revenue Investigation Department (राजस्व अनुसन्धान विभाग) to be completely abolished. Its functions to be transferred to subject-specific agencies (e.g. IRD, Customs Department).</td>
+          <td><span class="badge badge-removed">Abolished</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Tax audit period — 3 years fixed</strong></td>
+          <td>Tax audit periods could be longer/uncertain</td>
+          <td>Tax audit/assessment period fixed at <strong>3 years</strong> — provides certainty to businesses about the window of risk</td>
+          <td><span class="badge badge-new">Fixed</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>AI-based e-assessment</strong></td>
+          <td>Manual assessment</td>
+          <td>Risk-based tax investigation and assessment using <strong>AI and e-assessment (ई-एसेस्मेन्ट)</strong> system</td>
+          <td><span class="badge badge-new">New system</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Paperless, faceless, contactless revenue administration</strong></td>
+          <td>Physical contact often required</td>
+          <td>Goal of fully <strong>paperless, faceless (no face-to-face), contactless</strong> tax administration — all services automated</td>
+          <td><span class="badge badge-new">Target</span></td>
+        </tr>
+        <tr class="hl-blue">
+          <td><strong>Digital excise tickets + track-and-trace</strong></td>
+          <td>Physical excise stamps</td>
+          <td><strong>Digital excise tickets</strong> introduced; electronic track-and-trace system for excise goods to control evasion</td>
+          <td><span class="badge badge-new">New system</span></td>
+        </tr>
+        <tr>
+          <td><strong>Performance incentive allowance for revenue staff</strong></td>
+          <td>Fixed salary only</td>
+          <td>Revenue administration staff to get <strong>performance-based incentive allowances</strong> linked to revenue collection indicators — to motivate higher collection</td>
+          <td><span class="badge badge-new">New</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- ═══ LOCAL GOVERNMENT TAX ═══ -->
+  <div class="section" id="local-tax">
+    <div class="section-header">
+      <h2>Local Government Taxation — New Rules</h2>
+      <span class="para">Para 70(छ)</span>
+    </div>
+    <div class="detail-card red">
+      <strong>Multiple Local Government Taxes on Goods in Transit — PROHIBITED</strong>
+      A significant new rule: when goods are transported from one location to another passing through multiple local governments (municipalities/rural municipalities), <strong>only ONE local government may levy taxes</strong> such as transit levies (निकासी), scrap fees (कवाडी), and similar charges. Previously goods could be taxed by each local government they passed through. This is a major reform to reduce the cascading tax burden on inter-district trade and logistics.
+    </div>
+    <ul class="plist">
+      <li><strong>PAN mandatory for provincial and local tax payments:</strong> Taxpayers paying provincial and local government taxes must open/use a <strong>Permanent Account Number (PAN)</strong>. This integrates local tax compliance with the national tax ID system.</li>
+    </ul>
+  </div>
+
+  <!-- ═══ NON-TAX REVENUE ═══ -->
+  <div class="section" id="non-tax">
+    <div class="section-header">
+      <h2>Non-Tax Revenue Changes</h2>
+      <span class="para">Para 67(घ), 69(च)</span>
+    </div>
+    <ul class="plist">
+      <li><strong>Umbrella law for non-tax revenue:</strong> A comprehensive umbrella legislation to be introduced to make non-tax revenue mobilisation more effective. Currently non-tax revenues (fees, charges, royalties) are governed by dozens of separate acts.</li>
+      <li><strong>Cost-recovery and ability-to-pay basis:</strong> Non-tax revenues to be set on cost-recovery and ability-to-pay principles — ensuring fees reflect actual service costs.</li>
+      <li><strong>Petroleum royalty from Dailekh:</strong> Petroleum commercial production in Dailekh to proceed; royalty arrangements to follow.</li>
+      <li><strong>Hydropower royalties:</strong> Forest land use fees and tree-felling charges to be offset against transfer value when hydro project ownership transfers to GoN — reduces double charging.</li>
+    </ul>
+  </div>
+
+  <!-- ═══ ABOLISHED / REPEALED ═══ -->
+  <div class="section" id="abolished">
+    <div class="section-header">
+      <h2>Abolished, Repealed & Removed</h2>
+      <span class="para">Para 7, 8, 70</span>
+    </div>
+
+    <table class="change-table">
+      <thead><tr><th>What</th><th>Status</th><th>Note</th></tr></thead>
+      <tbody>
+        <tr class="hl-red">
+          <td><strong>Excise duty on 360 types of goods</strong></td>
+          <td><span class="badge badge-removed">Abolished</span></td>
+          <td>Completely removed from the excise schedule</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Prior Development Tax (पूर्वाधार विकास कर)</strong></td>
+          <td><span class="badge badge-removed">Merged → Green Tax</span></td>
+          <td>Absorbed into the new consolidated Green Tax</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Road Maintenance Surcharge (सडक मर्मत दस्तुर)</strong></td>
+          <td><span class="badge badge-removed">Merged → Green Tax</span></td>
+          <td>Absorbed into the new consolidated Green Tax</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Road Improvement Surcharge (सडक सुधार दस्तुर)</strong></td>
+          <td><span class="badge badge-removed">Merged → Green Tax</span></td>
+          <td>Absorbed into the new consolidated Green Tax</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Revenue Investigation Department</strong></td>
+          <td><span class="badge badge-removed">Department abolished</span></td>
+          <td>Functions transferred to subject agencies (IRD, Customs Dept.)</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>NRB prior approval for foreign investment repatriation</strong></td>
+          <td><span class="badge badge-removed">Removed</span></td>
+          <td>Notification now sufficient; prior approval no longer required</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Prior approval for foreign investment (automatic route)</strong></td>
+          <td><span class="badge badge-removed">Removed</span></td>
+          <td>Automatic approval to be expanded</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>15 laws previously announced for repeal</strong></td>
+          <td><span class="badge badge-removed">To be repealed</span></td>
+          <td>"Some Nepal Act Amendment Bill" to be presented to Parliament for immediate repeal of 15 identified laws. Specific laws not named in the budget speech.</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Discounts for officials & staff on their own institution's products/services</strong></td>
+          <td><span class="badge badge-removed">Removed</span></td>
+          <td>Public sector employees' discounts on goods/services of their own institution removed</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Multiple separate institutional funds providing benefits</strong></td>
+          <td><span class="badge badge-removed">Discontinued</span></td>
+          <td>Practice of creating multiple separate funds to provide benefits to be ended</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Supplementary EIA for projects with smaller-than-approved footprint</strong></td>
+          <td><span class="badge badge-removed">Removed requirement</span></td>
+          <td>No supplementary EIA needed if actual forest area/trees is less than EIA approved</td>
+        </tr>
+        <tr class="hl-red">
+          <td><strong>Multiple local government transit taxes on same goods movement</strong></td>
+          <td><span class="badge badge-removed">Prohibited</span></td>
+          <td>Only one local government may tax goods in transit; cascading local taxes prohibited</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="#top" class="back">↑ Top</a>
+  </div>
+
+</main>
+
+<script>
+  function filterNav(q) {
+    document.querySelectorAll('.sb-link').forEach(l => {
+      l.style.display = (!q || l.textContent.toLowerCase().includes(q.toLowerCase())) ? 'flex' : 'none';
+    });
+  }
+
+  // Active section highlight
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        const id = e.target.id;
+        document.querySelectorAll('.sb-link').forEach(l => {
+          l.classList.toggle('active', l.getAttribute('href') === '#' + id);
+        });
+      }
+    });
+  }, { rootMargin: '-15% 0px -65% 0px' });
+
+  document.querySelectorAll('.section').forEach(s => obs.observe(s));
+</script>
+</body>
+</html>
